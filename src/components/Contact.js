@@ -18,7 +18,8 @@ function Contact() {
         };
 
         try {
-            const response = await fetch('http://localhost:3000/api/send-contact-message', {
+            const response = await fetch('/api/send-contact-message', {
+
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
